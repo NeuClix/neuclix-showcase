@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuClix Project Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #f0f0f0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #00ffaa, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 3s infinite alternate;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 0 rgba(0, 255, 200, 0.2);
+      transition: all 0.3s ease-in-out;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 255, 200, 0.25);
+    }
+
+    .card h3 {
+      color: #00ffaa;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      border: none;
+      background: #00ffaa;
+      color: #0a0a0a;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px #00ffaa55;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #00aaff;
+      color: #fff;
+      box-shadow: 0 0 20px #00aaff88;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.03);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 NeuClix Project Hub</h1>
+    <p>Everything we're building — smarter content, powerful automation, and a future-ready platform.</p>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h3>🕸️ NeuClix.com</h3>
+      <p>Built in Drupal with Vue integration. Custom Twig + YAML-based content scaffolding. Hosting on DigitalOcean.</p>
+    </div>
+    <div class="card">
+      <h3>🤖 MCP + Chain Reactor</h3>
+      <p>n8n-powered control panel for AI content. Generates SEO blog posts, YouTube scripts, and schema in real time.</p>
+    </div>
+    <div class="card">
+      <h3>⚙️ Onboarding App</h3>
+      <p>Firebase chatbot for intake of new clients. Collects logos, services, socials. Connects to automations instantly.</p>
+    </div>
+    <div class="card">
+      <h3>📄 Press Release Engine</h3>
+      <p>Custom GPT-generated press releases, pushed to Releasethepress.com. Supports local SEO and client spotlighting.</p>
+    </div>
+  </section>
+
+  <div style="text-align: center;">
+    <a class="btn" href="#">See Source Code</a>
+  </div>
+
+  <footer>
+    Fueled by Passion. Powered by NeuClix. Driven by YOU.
+  </footer>
+
+</body>
+</html>
